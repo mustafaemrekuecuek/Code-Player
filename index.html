@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodePlayer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+<body>
+    <header>
+        <h1>CodePlayer</h1>
+        <div id="control"><div class="nav" id="link1">HTML</div><div class="nav">CSS</div><div class="nav">JS</div><div class="nav">Result</div></div>
+        <input type="button" id="run" value="Run">
+    </header>
+
+    <main id="Code">
+        <div class="inputBox" id="htmlBox">
+            <h3 class="inputHeader">HTML</h3>
+            <textarea placeholder="Write your HTML Code here..." draggable="false" type="textarea" class="ip" id="htmlInput"></textarea>
+        </div>
+        <div class="inputBox" id="CSSBox">
+            <h3 class="inputHeader">CSS</h3>
+            <textarea placeholder="Write your CSS Code here..." draggable="false" type="text" class="ip" name="HTML" id="css"></textarea>
+        </div>
+        <div class="inputBox" id="JSBox">
+            <h3 class="inputHeader">JS</h3>
+            <textarea placeholder="Write your JavaScript Code here..." draggable="false"  type="text" class="ip" name="HTML" id="js"></textarea>
+        </div>
+
+        <div class="inputBox" id="ResultBox">
+            <h3 class="inputHeader">Result</h3>
+            <div class="ip" id="result"></div>
+        </div>
+    </main>
+    <script src="CodePlayer.js"></script>
+</body>
+</html>
